@@ -1,4 +1,4 @@
-package _01_estruturaSequencial;
+package Atv12_ExerciciosSobreEstruturaSequencial;
 
 import java.util.Scanner;
 public class exercicio_02 {
