@@ -1,8 +1,10 @@
 package Atv12_ExerciciosSobreEstruturaSequencial;
 
 import java.util.Scanner;
+
 public class exercicio_05 {
     public static void main(String[] args) {
+
         Scanner sc= new Scanner(System.in);
 
         int cod1, cod2, num1, num2;
