@@ -16,6 +16,10 @@ public class exercicio_10 {
 
         media= ((n1+n2+n3)/3);
 
+<<<<<<< HEAD
         System.out.println("A média aritmética dos três números é: "+media);
+=======
+        System.out.println("A média aritmética dos três número é: "+media);
+>>>>>>> 624fdd4a75cc09ff65c88c155c8c73a6e06d992a
     }
 }
