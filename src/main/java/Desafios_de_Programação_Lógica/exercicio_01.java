@@ -7,7 +7,7 @@ public class exercicio_01 {
         int n1=0, n2=1, n3=n1+n2, num;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite até qual digito saber a sequencia");
+        System.out.println("Digite quantos números deseja saber da sequencia de fibonacci");
         num=sc.nextInt();
 
         if (num==1){
@@ -21,7 +21,7 @@ public class exercicio_01 {
             System.out.println("0");
             System.out.println("1");
 
-            for (int i=3; i<=num; i++) {
+            for (int i = 3; i <= num; i++) {
                 Boolean primo= true;
 
                 if (n3<2){
@@ -33,8 +33,9 @@ public class exercicio_01 {
                             primo= false;
                             break;
                         }
-                        else
+                        else {
                             primo=true;
+                        }
 
 
                 if (primo) {
