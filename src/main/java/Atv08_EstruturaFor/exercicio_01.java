@@ -11,6 +11,7 @@ public class exercicio_01 {
 
         for (int peca=1;peca<11;peca++) {
             System.out.println("Peça "+peca+" montada");
+
         }
     }
 }
