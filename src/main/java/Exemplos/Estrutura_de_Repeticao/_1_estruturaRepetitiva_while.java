@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.Estrutura_de_Repeticao;
 
 import java.util.Scanner;
 

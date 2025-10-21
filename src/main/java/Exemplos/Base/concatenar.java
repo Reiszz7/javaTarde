@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.Base;
 
 public class concatenar {
     public static void main(String[] args) {

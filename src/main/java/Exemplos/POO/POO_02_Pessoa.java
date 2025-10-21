@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.POO;
 
 public class POO_02_Pessoa {
     public String nome;

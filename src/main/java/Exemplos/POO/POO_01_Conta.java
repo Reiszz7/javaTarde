@@ -1,6 +1,6 @@
-package Exemplos;
+package Exemplos.POO;
 
-public class POO_01_modularizacaoConta {
+public class POO_01_Conta {
     public static int soma(int a, int b) {
     int soma = a + b;
     return soma;

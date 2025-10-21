@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.Listas;
 
 // import das listas:
 import java.util.ArrayList;

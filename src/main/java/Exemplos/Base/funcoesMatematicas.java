@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.Base;
 
 public class funcoesMatematicas {
     public static void main(String[] args) {

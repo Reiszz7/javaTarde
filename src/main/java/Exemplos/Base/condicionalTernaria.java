@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.Base;
 
 import java.util.Scanner;
 

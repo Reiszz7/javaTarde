@@ -1,4 +1,4 @@
-package Exemplos;
+package Exemplos.Listas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class listas_04_chamarAlterar {
 
         // uso do  método get() para acessar um elemento em um índice específico:
 
-        System.out.println("Elemento 1: " + letras.get(0)); // Como os indices começam em 0 o primeiro elemento da lista é o índice 0
+        System.out.println("Elemento 3: " + letras.get(2)); // Como os indices começam em 0 o primeiro elemento da lista é o índice 0
 
         // uso de método set() para substituir um elemento  por outro:
 
