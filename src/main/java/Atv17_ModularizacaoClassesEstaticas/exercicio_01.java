@@ -10,23 +10,34 @@ public class exercicio_01 {
 
         System.out.println("Digite apenas 'bloqueado' ou 'liberado'");
         do {
-            Frontal();
-            Lateral();
+            do {
+                System.out.println("Digite a leitura do sensor frontal (liberado/bloqueado)");
+                front = sc.nextLine();
+            } while (!front.equalsIgnoreCase("bloqueado") && !front.equalsIgnoreCase("liberado"));
+
+            Frontal(front);
+
+            do {
+                System.out.println("Digite a leitura do sensor direito (liberado/bloqueado)");
+                dir = sc.nextLine();
+            } while (!dir.equalsIgnoreCase("bloqueado") && !dir.equalsIgnoreCase("liberado"));
+
+            do {
+                System.out.println("Digite a leitura do sensor esquerdo (liberado/bloqueado)");
+                esq = sc.nextLine();
+            } while (!esq.equalsIgnoreCase("bloqueado") && !esq.equalsIgnoreCase("liberado"));
+
+            Lateral(dir, esq);
 
             System.out.println("Gostaria de continuar? s/n");
             resp = sc.next().charAt(0);
             System.out.println("-------------------------------------");
         } while (resp != 'n');
+
+        sc.close();
     }
 
-    public static void Frontal() {
-        Scanner sc = new Scanner(System.in);
-        String front;
-
-        do {
-            System.out.println("Digite a leitura do sensor frontal (liberado/bloqueado)");
-            front = sc.nextLine();
-        } while (!front.equalsIgnoreCase("bloqueado") && !front.equalsIgnoreCase("liberado"));
+    public static void Frontal( String front) {
 
         if (front.equalsIgnoreCase("liberado")) {
             System.out.println("Seguindo em frente");
@@ -34,19 +45,8 @@ public class exercicio_01 {
             System.out.println("Não é possível seguir em frente");
     }
 
-    public static void Lateral() {
+    public static void Lateral(String dir, String esq) {
         Scanner sc = new Scanner(System.in);
-        String dir, esq;
-
-        do {
-            System.out.println("Digite a leitura do sensor direito (liberado/bloqueado)");
-            dir = sc.nextLine();
-        } while (!dir.equalsIgnoreCase("bloqueado") && !dir.equalsIgnoreCase("liberado"));
-
-        do {
-            System.out.println("Digite a leitura do sensor esquerdo (liberado/bloqueado)");
-            esq = sc.nextLine();
-        } while (!esq.equalsIgnoreCase("bloqueado") && !esq.equalsIgnoreCase("liberado"));
 
         if (dir.equalsIgnoreCase("liberado") && esq.equalsIgnoreCase("liberado")) {
             String lado;
@@ -65,5 +65,7 @@ public class exercicio_01 {
             System.out.println("Seguindo para a direita");
         } else
             System.out.println("Seguindo para a esquerda");
+
+        sc.close();
     }
 }
