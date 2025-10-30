@@ -1,29 +1,33 @@
-package Atv19_Vetores;
+package Atividade19;
 
 import java.util.Scanner;
 
 public class exercicio_04 {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int[] numeros= new int[6];
-        int maior=0, menor=0;
+        Scanner sc = new Scanner(System.in);
+        int maior = 0;
+        int menor = 0;
+        int soma = 0;
+        int[] numero = new int[6];
 
-        for (int i=0; i<6; i++) {
-            System.out.println("Digite um número:");
-            numeros[i]= sc.nextInt();
-            if (i==0) {
-                maior= numeros[i];
-                menor= numeros[i];
-
+        for (int i = 0; i < 6; i++) {
+            System.out.println("Digite seu número");
+            numero[i] = sc.nextInt();
+            if (i == 0) {
+                maior = numero[i];
+                menor = numero[i];
             } else {
-                if (numeros[i]>maior) {
-                    maior= numeros[i];
-                } else if (numeros[i]<menor) {
-                    menor= numeros[i];
+                if (numero[i] > maior) {
+                    maior = numero[i];
+                }
+                if (numero[i] < menor) {
+                    menor = numero[i];
                 }
             }
         }
-        System.out.println("Maior: "+maior);
-        System.out.println("Menor: "+menor);
+
+        System.out.println("O maior numero é: " + maior);
+        System.out.println("O menor numero é: " + menor);
+        System.out.println("A soma dos números é: " + soma); // Adicione esta linha
     }
-}
+}  
