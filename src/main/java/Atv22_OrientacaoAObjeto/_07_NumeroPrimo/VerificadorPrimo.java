@@ -4,7 +4,6 @@ public class VerificadorPrimo {
     public int n;
 
     public String verificador() {
-        String msg;
         boolean primo=false;
 
         if (n==2) {
@@ -20,10 +19,8 @@ public class VerificadorPrimo {
         }
 
         if (primo) {
-            msg= " É primo";
+            return  " É primo";
         } else
-            msg= " Não é primo";
-
-        return msg;
+            return  " Não é primo";
     }
 }
