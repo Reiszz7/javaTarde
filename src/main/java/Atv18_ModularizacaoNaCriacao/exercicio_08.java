@@ -28,7 +28,7 @@ public class exercicio_08 {
 
     public static double CalculadoraJurosCompostos (double capital, double porcent, int tempo) {
         double montante= capital;
-         porcent/= 100;
+        porcent/= 100;
 
         while (tempo>0){
             double juros= montante*porcent;
